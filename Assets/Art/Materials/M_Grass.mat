@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_OtherBrickWall
-  m_Shader: {fileID: -6465566751694194690, guid: 1a3b7ca7e2393284288befdbbbd638b2, type: 3}
-  m_Parent: {fileID: 2100000, guid: 164f0a1234cf21442bcda6219f5407ba, type: 2}
+  m_Name: M_Grass
+  m_Shader: {fileID: -6465566751694194690, guid: 38ed9a0a6171bec40ad44be15b7d7231, type: 3}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -23,26 +23,32 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BrickTex:
-        m_Texture: {fileID: 2800000, guid: 40063457286c35145a1360b0a2d40ade, type: 3}
+    - _mainTex:
+        m_Texture: {fileID: 2800000, guid: 627dfd4dbe5dc9c45865c8c19a14581d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ClayTex:
-        m_Texture: {fileID: 2800000, guid: 9152f7e480d442045a1925ce4e20fea4, type: 3}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MortarTex:
-        m_Texture: {fileID: 2800000, guid: 4925e0724c6d11e44966d623ae13e951, type: 3}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _VertexIntensity: 0.125
     m_Colors:
-    - _BrickColor: {r: 0.47238588, g: 0, b: 1, a: 1}
-    - _BrickTiling: {r: 1, g: 1, b: 0, a: 0}
-    - _CementColor: {r: 1, g: 0, b: 0.8197484, a: 1}
+    - _VertexOffset: {r: 0.25, g: 0, b: 0, a: 0}
+    - _VertexTiling: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &2844828939397356872
+--- !u!114 &4933629871844138355
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
