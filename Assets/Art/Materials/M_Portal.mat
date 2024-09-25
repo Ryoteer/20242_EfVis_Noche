@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Grass
-  m_Shader: {fileID: -6465566751694194690, guid: 38ed9a0a6171bec40ad44be15b7d7231, type: 3}
+  m_Name: M_Portal
+  m_Shader: {fileID: -6465566751694194690, guid: 20e2834b6336e1d4ca3c543632b4a475, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -23,8 +23,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _mainTex:
-        m_Texture: {fileID: 2800000, guid: 627dfd4dbe5dc9c45865c8c19a14581d, type: 3}
+    - _PortalBGTex:
+        m_Texture: {fileID: 2800000, guid: 7d7a004b2b6e0e744b98188633195873, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -41,16 +41,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _MaxIntDist: 2.5
+    - _PixelAmount: 64
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SqrDistance: 6.25
-    - _VertexIntensity: 0.125
+    - _RotSpeed: 1.25
+    - _TwirlStr: 5
     m_Colors:
-    - _VertexOffset: {r: 0.25, g: 0, b: 0, a: 0}
-    - _VertexTiling: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _PortalState: {r: 0.5, g: 0.625, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4933629871844138355
+--- !u!114 &4101322212515581244
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
