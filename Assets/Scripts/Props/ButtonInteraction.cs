@@ -14,6 +14,10 @@ public class ButtonInteraction : MonoBehaviour, IInteract
 
     private void Start()
     {
+        FullScreenManager.Instance.NetherVignette.SetFloat(_isActiveName, 0);
+
+        Debug.Log(FullScreenManager.Instance.NetherVignette.GetFloat(_isActiveName));
+
         _anim = GetComponentInParent<Animator>();
     }
 
@@ -22,5 +26,15 @@ public class ButtonInteraction : MonoBehaviour, IInteract
         _isActive = !_isActive;
         _anim.SetBool(_isActiveName, _isActive);
         _anim.SetTrigger(_onEnableName);
+        switch (_isActive)
+        {
+            case false:
+                FullScreenManager.Instance.NetherVignette.SetFloat(_isActiveName, 0.0f);
+                break;
+            case true:
+                FullScreenManager.Instance.NetherVignette.SetFloat(_isActiveName, 1.0f);
+                break;
+        }
+        Debug.Log(FullScreenManager.Instance.NetherVignette.GetFloat(_isActiveName));
     }
 }
