@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PP_Raindrops
+  m_Shader: {fileID: -6465566751694194690, guid: 35524167728bc214b94a97e43a7bdc4d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: db3bb947f1c58bf44ab978e4503fea0b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2e21b8a4521d4915ae0b36728e72939a_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ba4f69975e61ce641a38f0f6513c3f3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_38866d4ca8b74d03a3a19f5dda6646ef_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: b7475778d22be324d85eb1e77072b548, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6debf901c81c45ea949d555315ca7412_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ba4f69975e61ce641a38f0f6513c3f3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ec893522122345c2bdeaa2153d152ef4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 1786b08a0f1b67844a6adbd8acc0f17f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_fc719fcab58c4240990cbd42f6a2e6d5_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: ba4f69975e61ce641a38f0f6513c3f3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DistPower: 0
+    - _DistScale: 0
+    - _Intensity: 0
+    - _Offset: 0.125
+    - _RainAmount: 1
+    - _VigAmount: 1
+    - _VigBlur: 1
+    m_Colors:
+    - _DripOffset: {r: 0, g: -0.25, b: 0, a: 0}
+    - _DripTiling: {r: 1.4, g: 0.35, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
