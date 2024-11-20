@@ -25,6 +25,11 @@ public class SwordSwitch : MonoBehaviour
         _swordVfx.SetVector4("Color", _actualColor);
     }
 
+    public void SetEvent(string eventName)
+    {
+        _swordVfx.SendEvent(eventName);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -57,6 +62,8 @@ public class SwordSwitch : MonoBehaviour
 
             yield return null;
         }
+
+        SetEvent("OnSwordChange");
 
         _actualColor = _randomColor;
 
